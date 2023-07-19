@@ -1,0 +1,83 @@
+.product {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Adjust the grid layout as needed */
+  gap: 1rem; /* Add gap between grid items */
+  padding: 1rem;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  text-align: center;
+  
+  width: 300px; /* Adjust the width of the product box */
+}
+
+.product > img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.product__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+}
+
+.info__name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.info__description {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.info__price {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.info__button {
+  display: block;
+  text-decoration: none;
+  color: #171717;
+  padding: 8px 16px;
+  background-color: #f4f4f4;
+  border: 1px solid #171717;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover {
+    background: #171717;
+    color: #f4f4f4;
+  }
+}
+
+/* Add media queries for responsiveness and adjusting the grid layout */
+@media (max-width: 768px) {
+  .product {
+    grid-template-rows: auto 1fr auto;
+    width: 160px; /* Adjust the width for smaller screens */
+  }
+
+  .product > img {
+    height: 120px; /* Adjust the image height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    grid-template-rows: auto auto 1fr auto;
+    width: 140px; /* Adjust the width for smaller screens */
+  }
+
+  .product > img {
+    height: 80px; /* Adjust the image height for smaller screens */
+  }
+}

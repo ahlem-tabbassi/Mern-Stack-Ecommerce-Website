@@ -1,0 +1,18 @@
+.button-container {
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+    transform: translateX(-50%);
+   
+  }
+  
+  .shop-now-button {
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    
+  }
+  

@@ -1,0 +1,25 @@
+.stats {
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .title {
+    margin-bottom: 70px;
+  }
+  
+  .slick-slider {
+    display: flex;
+    align-items: center;
+  }
+  
+  .slick-slide {
+    margin: 0;
+    padding: 0 0.2rem; /* Adjust the padding as per your requirements */
+  }
+  
+  .slick-slide img {
+    width: 70%;
+    height: auto;
+  }
+  
+
